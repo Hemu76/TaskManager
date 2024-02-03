@@ -1,7 +1,7 @@
 package com.taskManager.service;
 
-import com.taskManager.beans.SampleLogin;
+import org.springframework.security.core.userdetails.UserDetails;
 
 public interface LoginService {
-	public boolean login(SampleLogin sampleLogin);
+	public UserDetails loadUserByUsername(String username);
 }
